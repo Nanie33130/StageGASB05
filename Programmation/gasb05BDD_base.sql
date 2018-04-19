@@ -1,0 +1,47 @@
+/* Présentation :
+	nomScript: gasb05BDD_base.sql
+	nomBase: GASB05BDD
+	Auteur: Mélanie Lebeau
+	Date de création : 30/01/2018
+*/
+
+/***************************************/
+/*Suppression des tables existantes*/
+DROP TABLE IF EXISTS Licence;
+
+/***************************************/
+/*Création de la table Licence */
+
+CREATE TABLE Licence(
+	orgCd VARCHAR(7),
+	orgLib VARCHAR(50),
+	licId BIGINT,
+	licNom VARCHAR(50),
+	licPrenom VARCHAR(20),
+	licAdresse VARCHAR(100),
+	licCdePostal VARCHAR(5),
+	cmneLib VARCHAR(50),
+	licCd VARCHAR(10),
+	licQualif DATE,
+	licSexe VARCHAR(1),
+	licTaille INT,
+	catCd VARCHAR(3),
+	assCd VARCHAR(2),
+	licDteNaiss DATE,
+	licNum VARCHAR(8),
+	licCertifMed DATE,
+	licNationalite VARCHAR(20),
+	licTelDom VARCHAR(10),
+	licTelPro VARCHAR(10),
+	licTelPort VARCHAR(10),
+	licMail VARCHAR(100),
+	licRecOffreComm VARCHAR(7),
+	licRecNonComm VARCHAR(7),
+	clubNbrLic VARCHAR(35)
+)ENGINE=InnoDB CHARSET=utf8;
+
+/***************************************/
+
+/*Création de la primary key*/
+ALTER TABLE Licence
+	ADD PRIMARY KEY (licId);

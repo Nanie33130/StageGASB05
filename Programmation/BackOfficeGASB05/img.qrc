@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new/imgGASB05">
+        <file>imgGASB05/logoavecfond.png</file>
+        <file>imgGASB05/iconebonhomme.png</file>
+        <file>imgGASB05/Error.png</file>
+    </qresource>
+</RCC>
